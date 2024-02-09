@@ -1,0 +1,30 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#error-message {
+  color: red;
+  margin-bottom: 10px; /* Dodano odstęp dla czytelności */
+}
+
+.invalid-field {
+  border: 2px solid red;
+}
+
+/* Dodano stylowanie dla efektu przejścia (opcjonalne) */
+.invalid-field:focus {
+  border: 2px solid darkred;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Dodano stylowanie dla komunikatu o sukcesie (opcjonalne) */
+#success-message {
+  color: green;
+  margin-top: 10px;
+}

@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Express App</title>
+</head>
+<body>
+  <h1>Formularz</h1>
+  <form action="/submit" method="post" id="myForm">
+    <label for="name">Imię:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="age">Wiek:</label>
+    <input type="number" id="age" name="age" required>
+
+    <button type="submit">Wyślij</button>
+  </form>
+
+  <!-- Miejsce na prezentację danych -->
+  <div id="data-container"></div>
+  <!-- Komunikat o błędzie -->
+  <div id="error-message"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
